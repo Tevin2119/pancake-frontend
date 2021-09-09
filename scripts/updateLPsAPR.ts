@@ -13,6 +13,7 @@ interface BlockResponse {
   blocks: {
     number: string
   }[]
+
 }
 
 interface SingleFarmResponse {

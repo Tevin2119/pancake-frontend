@@ -49,7 +49,6 @@ const ChildrenWrapper = styled(Container)`
 `
 
 const PageSection: React.FC<PageSectionProps> = ({
-  children,
   background,
   svgFill,
   index = 1,
@@ -80,7 +79,7 @@ const PageSection: React.FC<PageSectionProps> = ({
     }
     return '48px 0'
   }
-
+    // renders page div to the right () => HOME , Lottery
   return (
     <Box {...containerProps}>
       {hasCurvedDivider && dividerPosition === 'top' && (
