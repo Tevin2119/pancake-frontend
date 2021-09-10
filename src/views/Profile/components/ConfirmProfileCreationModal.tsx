@@ -22,6 +22,7 @@ interface Props {
 }
 
 const ConfirmProfileCreationModal: React.FC<Props> = ({
+  userName,
   account,
   teamId,
   selectedNft,

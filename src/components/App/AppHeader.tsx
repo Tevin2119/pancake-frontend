@@ -21,7 +21,7 @@ const AppHeaderContainer = styled(Flex)`
   width: 100%;
   border-bottom: 1px solid ${({ theme }) => theme.colors.cardBorder};
 `
-
+const tevin = "Tevin";
 const AppHeader: React.FC<Props> = ({ title, subtitle, helper, backTo, noConfig = false }) => {
   return (
     <AppHeaderContainer>
@@ -33,7 +33,7 @@ const AppHeader: React.FC<Props> = ({ title, subtitle, helper, backTo, noConfig 
         )}
         <Flex flexDirection="column">
           <Heading as="h2" mb="8px">
-            {title}
+            {tevin}
           </Heading>
           <Flex alignItems="center">
             {helper && <QuestionHelper text={helper} mr="4px" />}

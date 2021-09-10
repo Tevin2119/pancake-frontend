@@ -38,6 +38,7 @@ const ComponentWrapper = styled.div<WrapperProps>`
 `
 
 const CurvedDivider: React.FC<CurvedDividerProps> = ({
+  svgFill,
   index,
   dividerPosition,
   dividerComponent,

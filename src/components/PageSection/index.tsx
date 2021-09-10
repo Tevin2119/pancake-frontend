@@ -48,7 +48,10 @@ const ChildrenWrapper = styled(Container)`
   }
 `
 
+
+// template for all left pages(see home.index for example => remove all pageSections for demo())
 const PageSection: React.FC<PageSectionProps> = ({
+  children,
   background,
   svgFill,
   index = 1,
