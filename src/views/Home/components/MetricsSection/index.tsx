@@ -83,7 +83,7 @@ const Stats = () => {
         </IconCard>
         <IconCard {...StakedCardData}>
           <StatCardContent
-            headingText={t('$%tvl% staked', { tvl: tvlString })}
+            headingText="test of my stats here"
             bodyText={t('Total Value Locked')}
             highlightColor={theme.colors.failure}
           />
