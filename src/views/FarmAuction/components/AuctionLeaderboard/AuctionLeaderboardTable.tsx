@@ -10,9 +10,9 @@ import {
   Button,
   useMatchBreakpoints,
   useModal,
-  SubMenu,
-  SubMenuItem,
-  EllipsisIcon,
+  // SubMenu,
+  // SubMenuItem,
+  // EllipsisIcon,
   LinkExternal,
 } from '@pancakeswap/uikit'
 import { getBscScanLink } from 'utils'
@@ -87,7 +87,7 @@ const LeaderboardRow: React.FC<LeaderboardRowProps> = ({ bidder, cakePriceBusd, 
         </Flex>
       </GridCell>
       <GridCell isTopPosition={isTopPosition}>
-        <SubMenu component={<EllipsisIcon height="16px" width="16px" />}>
+        {/* <SubMenu component={<EllipsisIcon height="16px" width="16px" />}>
           {projectSite && (
             <SubMenuItem as={LinkExternal} href={projectSite} bold={false} color="text">
               {t('Project Site')}
@@ -103,7 +103,7 @@ const LeaderboardRow: React.FC<LeaderboardRowProps> = ({ bidder, cakePriceBusd, 
               {t('Bidder Address')}
             </SubMenuItem>
           )}
-        </SubMenu>
+        </SubMenu> */}
       </GridCell>
     </>
   )
