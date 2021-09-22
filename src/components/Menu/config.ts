@@ -3,42 +3,14 @@ import { ContextApi } from 'contexts/Localization/types'
 
 const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
   {
+    label: t('Arron'),
+    icon: 'HomeIcon',
+    href: 'www.google.co.uk',
+  },
+  {
     label: t('Home'),
     icon: 'HomeIcon',
     href: '/',
-  },
-  {
-    label: t('Trade'),
-    icon: 'TradeIcon',
-    items: [
-      {
-        label: t('Exchange'),
-        href: '/swap',
-      },
-      {
-        label: t('Liquidity'),
-        href: '/pool',
-      },
-      {
-        label: t('LP Migration'),
-        href: 'https://v1exchange.pancakeswap.finance/#/migrate',
-      },
-    ],
-  },
-  {
-    label: t('Farms'),
-    icon: 'FarmIcon',
-    href: '/farms',
-  },
-  {
-    label: t('Pools'),
-    icon: 'PoolIcon',
-    href: '/pools',
-  },
-  {
-    label: t('Prediction (BETA)'),
-    icon: 'PredictionsIcon',
-    href: '/prediction',
   },
   {
     label: t('Lottery'),
@@ -53,24 +25,17 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
     label: t('Collectibles'),
     icon: 'NftIcon',
     href: '/collectibles',
-  },
-  {
-    label: t('Team Battle'),
-    icon: 'TeamBattleIcon',
-    href: '/competition',
-  },
-  {
-    label: t('Teams & Profile'),
-    icon: 'GroupsIcon',
     items: [
       {
-        label: t('Leaderboard'),
-        href: '/teams',
+        label: t('Trade'),//trade nft 
+        href: '/swap',
       },
-      {
-        label: t('Task Center'),
-        href: '/profile/tasks',
-      },
+    ],
+  },
+  {
+    label: t('Profile'),
+    icon: 'GroupsIcon',
+    items: [
       {
         label: t('Your Profile'),
         href: '/profile',

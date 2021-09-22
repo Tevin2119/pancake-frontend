@@ -4,8 +4,10 @@ import { useCakeBusdPrice } from 'hooks/useBUSDPrice'
 const useGetDocumentTitlePrice = () => {
   const cakePriceBusd = useCakeBusdPrice()
   useEffect(() => {
-    const cakePriceBusdString = cakePriceBusd ? cakePriceBusd.toFixed(2) : ''
-    document.title = `Pancake Swap - ${cakePriceBusdString}`
+    // const cakePriceBusdString = cakePriceBusd ? cakePriceBusd.toFixed(2) : ''
+
+    const cakePriceBusdString = "test"
+    document.title = `Arron - ${cakePriceBusdString}`
   }, [cakePriceBusd])
 }
 export default useGetDocumentTitlePrice
